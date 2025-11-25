@@ -20,7 +20,7 @@ export default function MobileView({
       {filtered.map((r, i) => (
         <div
           key={r._id}
-          className="bg-gray-900 p-4 rounded-xl border border-gray-700 space-y-3"
+          className="bg-gray-900 p-4 rounded-xl border border-blue-800 space-y-3"
         >
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 flex items-center justify-center text-gray-400">
@@ -61,7 +61,7 @@ export default function MobileView({
             />
 
             {/* ⭐ NEW — Result / ഇനി കിട്ടാനുള്ളത് */}
-            <div className="col-span-2 bg-black p-2  text-gray-300">
+            <div className="col-span-2 bg-black p-3 rounded  text-gray-300">
               ഇനി കിട്ടാനുള്ളത് :
               <span className="text-green-400 font-bold text-2xl ml-2">
                 {r.result ?? ""}

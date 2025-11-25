@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { authLogin } from "../../api";
 
-export default function Login({ onAuth }) {
+export default function Login({ onAuth, setMode }) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
@@ -23,6 +23,7 @@ export default function Login({ onAuth }) {
         onSubmit={submit}
         className="w-full max-w-sm bg-gray-900 text-white p-6 rounded-2xl shadow-xl space-y-6 border border-gray-700"
       >
+
         <h2 className="text-2xl font-bold text-center text-purple-400">
           Welcome Back
         </h2>
@@ -48,6 +49,7 @@ export default function Login({ onAuth }) {
         >
           Login
         </button>
+
       </form>
     </div>
   );

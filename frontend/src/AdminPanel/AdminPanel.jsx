@@ -181,9 +181,7 @@ export default function AdminPanel() {
 
   return (
     <div className="p-4 max-w-6xl mx-auto space-y-6 bg-black text-white">
-      <h2 className="text-2xl font-bold text-center bg-gray-900 py-3 rounded">
-        Admin Panel — Add, Edit, Delete
-      </h2>
+  
 
       <AdminForm
         form={form}

@@ -25,7 +25,7 @@ export default function AdminTable({ filtered, deleteRow, handleEdit }) {
 
         <tbody>
           {filtered.map((r, i) => (
-            <tr key={r._id} className="bg-gray-900">
+            <tr key={r._id} className="bg-gray-900 ">
               <td className="p-2 border border-gray-700">{i + 1}</td>
               <td className="p-2 border border-gray-700 text-yellow-300 capitalize">
                 {r.name}

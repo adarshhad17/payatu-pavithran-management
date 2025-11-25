@@ -25,14 +25,16 @@ export default function App() {
   if (!user) return <AuthWrapper onAuth={setUser} />;
 
   return (
-    <div className="p-4 min-h-screen bg-black text-white flex flex-col">
+  <div className="p-4 pt-20 min-h-screen bg-black text-white flex flex-col">
 
-      <div className="flex-grow: 1;">
+      <Navbar  user={user} onLogout={logout} />  {/* ✅ Clean and separate */}
+
+
+      <div className="flex-grow: 1; mt-10">
         {user.role === "parent" && <ParentView />}
         {user.role === "admin" && <AdminPanel />}
       </div>
 
-      <Navbar user={user} onLogout={logout} />  {/* ✅ Clean and separate */}
 
     </div>
   );
